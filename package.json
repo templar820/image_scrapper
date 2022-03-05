@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "images-scraper": "^6.3.0",
+    "node-fetch": "2.6.7",
     "puppeteer": "^5.5.0"
   },
   "scripts": {

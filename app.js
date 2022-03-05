@@ -41,11 +41,13 @@ async function run(request_array, limit) {
         }).then(startScrap).catch(startScrap);
     }
     for (let i =0; i < limit; i++){
-        startScrap();
+        return startScrap();
     }
 }
-//1794969
-run(new Array(10000), 16).catch(err => console.error(err))
+
+run(new Array(1794969), 16).catch(err => console.error(err)).then(() => {
+    resultFile.write("[]]");
+})
 
 
 
